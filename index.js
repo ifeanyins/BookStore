@@ -23,22 +23,21 @@ const inputDiv =document.getElementById ("uk-input-div");
 
 function breaking (){
     
-    books.forEach(book => {
+    books.map(book => {
         const mainDiv = document.querySelector('#uk-emptydiv')
        const childDiv = document.createElement('div');
        const title = document.createElement('h3');
        const author = document.createElement('h5');
        const removeBtn = document.createElement('button');
+       removeBtn.innerHTML = "Remove";
+       removeBtn.classList.add("removebtn")
        const hrLine = document.createElement('hr');
-       const addBtn = document.createElement('button');
         title.textContent = `${book.Title}`;
         author.textContent = `${book.Author}`;
-        // console.log(book.Title);
         childDiv.appendChild(title);
         childDiv.appendChild(author);
         childDiv.appendChild(removeBtn);
         childDiv.appendChild(hrLine);
-        childDiv.appendChild(addBtn);
         mainDiv.appendChild(childDiv);
     });
 
@@ -55,6 +54,8 @@ function inputs (){
     authorInput.placeholder = "Author";
     const lineBr = document.createElement('br');
     const lineB = document.createElement('br');
+    const addBtn = document.createElement('button');
+    addBtn.classList.add("addbtn")
     const mainInputDiv = document.createElement('div')
     
     
@@ -62,7 +63,11 @@ function inputs (){
     mainInputDiv.appendChild(lineBr);
     mainInputDiv.appendChild(lineB);
     mainInputDiv.appendChild(authorInput);
+    mainInputDiv.appendChild(addBtn);
     inputDiv.appendChild(mainInputDiv)
+
+    addBtn.innerHTML = "Add"
 }
 
 inputs ()
+

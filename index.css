@@ -27,3 +27,15 @@
 .titleC{
     width: 350px;
 }
+
+.addbtn{
+    display: block;
+   padding: 5px 30px;
+   font-size: medium;
+   font-family: sans-serif;
+   margin: 10px 192px;
+}
+
+.removebtn {
+    margin: 10px 0px;
+}

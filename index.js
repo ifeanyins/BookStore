@@ -1,5 +1,46 @@
 
 
+const headerText = document.getElementById('uk-header-text');
+headerText.innerHTML = 'Add New Book';
+const currentDate = document.querySelector('#currentDate')
+
+//  Current Date Manipulation
+
+let date = new Date();
+
+let day = date.getDate();
+let month =  date.getMonth() + 1;
+let year =  date.getFullYear() ;
+currentDate.innerHTML = `Date: ${day} | ${month} | ${year}`
+currentDate.classList.add('current')
+
+// Tab content switch
+
+let tabPanel = document.querySelectorAll('.tabPanel');
+
+function showPanel(panelId){
+    tabPanel.forEach((panel) =>
+       panel.classList.add('hide')
+    );
+
+    document.getElementById(panelId).classList.remove('hide')
+}
+
+// function showPanel (panelIndex, colorCOde) {
+//     tabButton.forEach(function(node){
+//         node.style.backgroundColor= "";
+//         node.style.color= "";
+//     });
+//     tabButton[panelIndex].style.backgroundColor = colorCOde;
+//     tabButton[panelIndex].style.color = 'white';
+//         tabPanel.forEach(function(node){
+//             node.style.display = "none";
+//         })
+//     tabButton[panelIndex].style.display = 'block';
+// };
+// showPanel(0)
+
+
 class Book {
     constructor(title, author){
         this.title = title;
@@ -50,6 +91,7 @@ class User {
     const titleDiv = document.createElement('h5')
     const authorDiv = document.createElement('h5')
     const removeBtn = document.createElement('button')
+
 
     titleDiv.innerText = `${book.title}`
     authorDiv.innerText = `${book.author}`
@@ -106,6 +148,5 @@ document.querySelector('#addbtn').addEventListener('click', (e) => {
       }, 3000);
     });
 
-// const headerText = document.getElementById('uk-header-text');
 // const titleInput = document.getElementById('uk-title');
 // const authorInput = document.querySelector('#uk-author');

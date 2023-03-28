@@ -4,10 +4,148 @@
     box-sizing: border-box;
 }
 
+/* Nav Bar Div STYLES  */
 
+#nav-ul {
+    /* margin: auto; */
+    display: flex;
+   list-style-type: none;
+   justify-content: space-between;
+}
+
+#nav-bar {
+   height:60px;
+   background-color: #fafafa;
+   padding:0 20px;
+   font-family: sans-serif;
+   font-size: large;
+   box-shadow: 0 0 10px rgb(118, 118, 118);
+   align-items: center;
+   padding: 20px 0px; 
+}
+
+#tab-container {
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Nav Bar Div Text STYLES  */
+
+.Awesome-text {
+    font-weight: 700;
+    color: brown;
+    font-size: larger;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.Books{
+    font-weight: 600;
+    font-size: larger;
+}
+
+#bookCounter{
+    background-color: brown;
+    color: #fff;
+    font-size: medium;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+nav ul li{
+    padding-right: 14px;
+}
+
+/* Input & Btn Style */
+input{
+    width: 200px;
+    height: 50px;
+    border-width: 0 0 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+input:focus{
+    width: 200px;
+    height: 50px;
+    border-width: 0 0 0;
+    border-bottom: 1px solid brown;
+    outline: 0;
+}
+
+#addbtn {
+   display: flex;
+   margin: auto;
+   padding:10px 100px;
+   text-align: center;
+   border: none;
+   background-color: #f4f4f4;
+   box-shadow: 0 0 2px #afafaf;
+   cursor: pointer;
+}
+
+#addbtn:hover {
+    background-color: brown;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.7s ease-in;
+}
+
+/* Contact Info */
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+/* footer */
+footer{
+    bottom: 0;
+    position: fixed;
+    background-color: #fafafa;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(118, 118, 118);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.Awesome-span{
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.Awesome-txt{
+    color: brown;
+}
+
+#footernav-bar{
+    display: flex;
+}
+
+/* Dom Manipulation */
+
+.hide {
+    display: none;
+}
+.current{
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+    font-size: larger;
+    font-family: sans-serif;
+    margin: 20px;
+}
 
 #uk-header-text{
     text-align: center;
+    margin-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -39,6 +177,7 @@
 .removebtn {
     margin: 10px 0px;
 }
+
 .remove {
     cursor: pointer;
 }

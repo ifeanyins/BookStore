@@ -1,5 +1,6 @@
 
 
+
 const headerText = document.getElementById('uk-header-text');
 headerText.innerHTML = 'Add New Book';
 const currentDate = document.querySelector('#currentDate')
@@ -23,6 +24,8 @@ tabPanel.forEach(element => {
 });
     document.getElementById(panelId).classList.remove('hide')
 }
+
+/*  MEET PROMISE FOR EXPLANATION*/
 
 // const changeNavColor = (index) => {
 //     const navItems = document.querySelectorAll('#nav-item');

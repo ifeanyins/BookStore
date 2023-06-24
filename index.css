@@ -148,6 +148,16 @@ footer{
     display: flex;
 }
 
+.clicked-link {
+    color: rgb(165, 42, 42);
+    font-weight: 800;
+    outline: 0;
+    padding-bottom: 9px;
+    border: 1px solid;
+    border-color: rgba(165, 42, 42, 0.511);
+    border-width: 0 0 1px;
+    transition: all 0.5s ease-in-out;
+  }
 /* Dom Manipulation */
 
 .hide {
